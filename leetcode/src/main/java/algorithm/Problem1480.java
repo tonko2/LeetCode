@@ -10,12 +10,4 @@ public class Problem1480 {
         }
         return res;
     }
-
-    public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 4};
-        int[] ans = runningSum(nums);
-        for(int i=0; i<ans.length; i++) {
-            System.out.println(ans[i]);
-        }
-    }
 }
