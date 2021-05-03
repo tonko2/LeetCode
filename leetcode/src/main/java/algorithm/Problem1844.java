@@ -2,17 +2,13 @@ package algorithm;
 
 public class Problem1844 {
     public String replaceDigits(String s) {
-        StringBuilder ans = new StringBuilder();
-        for (int i = 0; i < s.length(); i++) {
-            if (i % 2 == 0) {
-                ans.append(s.charAt(i));
-            } else {
-                char base = s.charAt(i - 1);
-                int shift = s.charAt(i) - '0';
 
-                ans.append((char) (base + shift));
-            }
+        char[] ans = s.toCharArray();
+
+        for(int i=1; i<s.length(); i+=2) {
+            ans[i] = (char) (ans[i-1] + ans[i] - '0');
         }
-        return ans.toString();
+
+        return String.valueOf(ans);
     }
 }
