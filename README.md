@@ -7,7 +7,9 @@
 - 852 (Binary Search Tree)
 - 897
 - 942
+- 977 (Two pointer)
 - 1022
+- 1047
 - 1290
 - 1337 (Binary search + Heap)
 - 1365
